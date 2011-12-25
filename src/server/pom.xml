@@ -10,7 +10,36 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>server</artifactId>
+    <packaging>war</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.smvp4g</groupId>
+            <artifactId>client</artifactId>
+            <version>1.0</version>
+            <!-- Because it has two package war and jar, We just using Jar -->
+            <classifier>classes</classifier>
+        </dependency>
+    </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>war</goal>
+                        </goals>
+                        <configuration>
+                            <!--Megre module client to server to production-->
+                            <warSourceDirectory>../client/src/main/webapp</warSourceDirectory>
+                            <webXml>./src/main/webapp/WEB-INF/web.xml</webXml>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

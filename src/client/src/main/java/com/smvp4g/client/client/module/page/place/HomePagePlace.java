@@ -1,4 +1,4 @@
-package com.smvp4g.client.client.module.main.place;
+package com.smvp4g.client.client.module.page.place;
 
 import com.smvp4g.mvp.client.core.place.AbstractPlace;
 import com.smvp4g.mvp.client.core.place.Place;

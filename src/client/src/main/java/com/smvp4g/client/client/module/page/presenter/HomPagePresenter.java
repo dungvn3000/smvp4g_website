@@ -1,7 +1,7 @@
-package com.smvp4g.client.client.module.main.presenter;
+package com.smvp4g.client.client.module.page.presenter;
 
-import com.smvp4g.client.client.module.main.place.HomePagePlace;
-import com.smvp4g.client.client.module.main.view.HomePageView;
+import com.smvp4g.client.client.module.page.place.HomePagePlace;
+import com.smvp4g.client.client.module.page.view.HomePageView;
 import com.smvp4g.mvp.client.core.presenter.AbstractPresenter;
 import com.smvp4g.mvp.client.core.presenter.annotation.Presenter;
 

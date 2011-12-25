@@ -1,4 +1,4 @@
-package com.smvp4g.client.client.module.main.view;
+package com.smvp4g.client.client.module.page.view;
 
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
@@ -56,6 +56,5 @@ public class HomePageView extends AbstractView {
                 "</pre>"
         );
         setWidget(html);
-        setHeight("800px");
     }
 }
