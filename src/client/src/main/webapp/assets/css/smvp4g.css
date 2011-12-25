@@ -3,15 +3,18 @@
 */
 body {
     margin: auto !important;
-    width: 800px !important;
+    width: 900px !important;
+    background: #E9E7E0;
 }
 
 #banner_panel {
     width: 100%;
+    background: black;
 }
 
 #top_panel {
     width: 100%;
+    border-bottom:thin solid lightgray;
 }
 
 #left_panel {
@@ -21,7 +24,8 @@ body {
 
 #content_panel {
     float: left;
-    width: 600px;
+    width: 900px;
+    background: white;
 }
 
 #right_panel {
@@ -32,7 +36,9 @@ body {
 
 #bottom_panel {
     clear: left;
-    width: 800px;
+    width: 100%;
+    background: #F9F9F9;
+    border-top: thin solid lightgray;
 }
 
 #loading {

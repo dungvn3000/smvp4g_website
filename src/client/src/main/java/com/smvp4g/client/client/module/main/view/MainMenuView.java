@@ -16,7 +16,6 @@ import com.smvp4g.mvp.client.widget.MenuLink;
 public class MainMenuView extends AbstractView {
     @Override
     protected void initializeView() {
-        setBorderWidth(1);
         setWidget(new MenuLink("Home Page", "main/homePage"));
     }
 }

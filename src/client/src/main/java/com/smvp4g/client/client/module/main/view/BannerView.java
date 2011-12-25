@@ -15,7 +15,7 @@ import com.smvp4g.mvp.client.core.view.annotation.View;
 public class BannerView extends AbstractView {
     @Override
     protected void initializeView() {
-        HTML html = new HTML("<h1 style='text-align:center'>SMVP4G Website</h1>");
+        HTML html = new HTML("<h1 style='text-align:center;color:#CFCDC6'>Slim and Simple MVP Framework for GWT</h1>");
         setWidget(html);
     }
 }
