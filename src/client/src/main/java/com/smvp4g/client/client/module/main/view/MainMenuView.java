@@ -4,6 +4,7 @@ import com.extjs.gxt.ui.client.widget.VerticalPanel;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Label;
 import com.smvp4g.client.client.constant.DomIdConstant;
+import com.smvp4g.mvp.client.core.eventbus.annotation.HistoryHandler;
 import com.smvp4g.mvp.client.core.view.AbstractView;
 import com.smvp4g.mvp.client.core.view.annotation.View;
 import com.smvp4g.mvp.client.widget.MenuLink;
@@ -17,13 +18,20 @@ import com.smvp4g.mvp.client.widget.MenuLink;
 @View(parentDomId = DomIdConstant.TOP_PANEL)
 public class MainMenuView extends AbstractView {
 
+    @HistoryHandler
+    public MenuLink homePage = new MenuLink("Home Page", "page/homePage");
+
+    @HistoryHandler
+    public MenuLink examplePage = new MenuLink("Example", "page/examplePage");
+
     private HorizontalPanel verticalPanel = new HorizontalPanel();
 
     @Override
     protected void initializeView() {
-        verticalPanel.add(new MenuLink("Home Page", "page/homePage"));
-        verticalPanel.add(new MenuLink("Example", "page/examplePage"));
+        verticalPanel.add(homePage);
+        verticalPanel.add(examplePage);
         verticalPanel.setSpacing(5);
         setWidget(verticalPanel);
+        setStyleName("topmenu");
     }
 }
