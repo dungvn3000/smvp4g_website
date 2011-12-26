@@ -50,7 +50,7 @@ public class HomePageView extends AbstractView {
                 "<br>\n" +
                 "<p><b>Place</b></p>\n" +
                 "<pre>\n" +
-                "\t@Place\n" +
+                "\t@Place(defaultPlace = true)\n" +
                 "\tpublic class TestPlace extends AbstractPlace {\n" +
                 "\t}\n" +
                 "</pre>"
